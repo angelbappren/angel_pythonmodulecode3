@@ -1,0 +1,13 @@
+# ignore all files
+*
+
+# except .gitignore
+!/.gitignore
+
+
+# except angel_jpcode3 file
+!/angel_jpcode3/
+
+
+# except angel_pythoncode_mod3.ipynb
+!/angel_jpcode3/angel_pythoncode_mod3.ipynb

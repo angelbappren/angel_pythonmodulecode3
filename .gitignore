@@ -8,7 +8,9 @@
 # except angel_jpcode3 file
 !/angel_jpcode3/
 !/angel_jpcode3/tblProduct-export-26-08-2025-consolidated.csv
-
+!/angel_jpcode3/fnd_gfm_50117894-req-summary-jan-dec-2023-AN1446-ICT-consolidated.csv
+!/angel_jpcode3/fnd_gfm_50117895-req-summary-jan-dec-2024-AN1446-ICT-consolidated.csv
+!/angel_jpcode3/fnd_gfm_50117898-req-summary-jan-aug-2025-AN1446-ICT-consolidated.csv
 
 # except angel_pythoncode_mod3.ipynb
 !/angel_jpcode3/angel_pythoncode_mod3.ipynb

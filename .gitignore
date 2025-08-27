@@ -21,3 +21,6 @@ logs/*
 # Ignore large datasets
 data/processed/*
 data/raw/*
+
+# ignore app.log file
+angel_jpcode3/logs/app.log

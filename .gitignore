@@ -7,15 +7,29 @@
 
 # except angel_jpcode3 file
 !/angel_jpcode3/
-!/angel_jpcode3/fun
-!/angel_jpcode3/tblProduct-export-26-08-2025-consolidated.csv
-!/angel_jpcode3/fnd_gfm_50117894-req-summary-jan-dec-2023-AN1446-ICT-consolidated.csv
-!/angel_jpcode3/fnd_gfm_50117895-req-summary-jan-dec-2024-AN1446-ICT-consolidated.csv
-!/angel_jpcode3/fnd_gfm_50117898-req-summary-jan-aug-2025-AN1446-ICT-consolidated.csv
+!/angel_jpcode3/data
+!/angel_jpcode3/data/raw
+!/angel_jpcode3/data/processed
+!/angel_jpcode3/notebooks
+!/angel_jpcode3/src
+!/angel_jpcode3/src/fun
+!/angel_jpcode3/tests
 
-# except angel_pythoncode_mod3.ipynb
-!/angel_jpcode3/angel_pythoncode_mod3.ipynb
-!/angel_jpcode3/angel_tracker_et.ipynb
-!/angel_jpcode3/angel_access_et.ipynb
-!/angel_jpcode3/angel_access_tblPO.ipynb
-!/angel_jpcode3/angel_access_tblUnit.ipynb
+
+
+
+
+
+# except data files
+!/angel_jpcode3/data/raw/tblProduct-export-26-08-2025-consolidated.csv
+!/angel_jpcode3/data/raw/fnd_gfm_50117894-req-summary-jan-dec-2023-AN1446-ICT-consolidated.csv
+!/angel_jpcode3/data/raw/fnd_gfm_50117895-req-summary-jan-dec-2024-AN1446-ICT-consolidated.csv
+!/angel_jpcode3/data/raw/fnd_gfm_50117898-req-summary-jan-aug-2025-AN1446-ICT-consolidated.csv
+
+
+# except notebooks
+!/angel_jpcode3/notebooks/angel_pythoncode_mod3.ipynb
+!/angel_jpcode3/notebooks/angel_tracker_et.ipynb
+!/angel_jpcode3/notebooks/angel_access_et.ipynb
+!/angel_jpcode3/notebooks/angel_access_tblPO.ipynb
+!/angel_jpcode3/notebooks/angel_access_tblUnit.ipynb

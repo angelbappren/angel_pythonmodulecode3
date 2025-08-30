@@ -1,7 +1,7 @@
 import pandas as pd
 import logging
 
-def stitch_year_files(file_list, load_date):
+def stitch_year_files(file_list, batch_load):
 
     year_files = []
 
@@ -17,8 +17,9 @@ def stitch_year_files(file_list, load_date):
         logging.warning("No CSV files successfully loaded; returning empty df.")
         return pd.DataFrame()
     
-stitched = pd.concat(year_files, ignore_index=True, sort=False)
-stitched["BatchLoad"] = batch_load
-logging.info(f"Stitched {len(year_files)} files/s") → {len(stitched) total rows. BatchLoad='{batch_load}'}
-return stitched
+
+    stitched = pd.concat(year_files, ignore_index=True, sort=False)
+    stitched["BatchLoad"] = batch_load
+    logging.info(f"Stitched {len(year_files)} file(s) → {len(stitched)} total rows. BatchLoad='{batch_load}'.")
+    return stitched
 

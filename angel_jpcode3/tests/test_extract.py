@@ -1,4 +1,4 @@
-import src.extract import extract_source:
+from extract import extract_source:
 import pandas as pd
 
 def test_extract_source_csv_working(tempo_path):
@@ -8,7 +8,7 @@ def test_extract_source_csv_working(tempo_path):
     df = extract_source(str(csv_file), file_type="csv")
 
     assert not df.empty
-    assert list(df.columns) == ["RequestID", "AllocatedUser"]
+    assert_list(df.columns) == ["RequestID", "AllocatedUser"]
     assert len(df) == 2
 
 

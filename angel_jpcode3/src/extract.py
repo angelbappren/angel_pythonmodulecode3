@@ -2,17 +2,7 @@ import pandas as pd
 import logging
 
 def extract_source(filepath, file_type='csv', sheet_name=0):
-    """
-    Extracts data from a CSV or Excel file.
-
-    Args:
-        filepath (str): File path to load.
-        file_type (str): 'csv' or 'excel'
-        sheet_name (int or str): Sheet name or index (only used for Excel)
-
-    Returns:
-        pd.DataFrame: Loaded DataFrame, or empty if failed.
-    """
+    
     try:
         if file_type == "csv":
             df = pd.read_csv(filepath)
@@ -26,4 +16,4 @@ def extract_source(filepath, file_type='csv', sheet_name=0):
 
     except Exception as error:
         logging.error(f"Failed to load {file_type.upper()} file '{filepath}': {str(error)}")
-        return pd.DataFrame()  # <- Note the capital 'F'
+        return pd.DataFrame()  

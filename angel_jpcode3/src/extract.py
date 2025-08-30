@@ -11,8 +11,17 @@ def extract_source(filepath, file_type='csv', sheet_name=0):
         else:
             raise ValueError("Unsupported file type: must be 'csv' or 'excel'.")
 
-        logging.info(f"Loaded {file_type.upper()} file: '{filepath}' with {len(df)} rows.")
+
+
+        logging.info(f"{file_type.upper()} file '{filepath}' extracted successfully with {len(df)} rows.")
+
+
+        #logging.info("✅✅✅ Test log line triggered ✅✅✅")
+
+
+
         return df
+    
 
     except Exception as error:
         logging.error(f"Failed to load {file_type.upper()} file '{filepath}': {str(error)}")

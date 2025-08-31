@@ -4,8 +4,8 @@ import pandas as pd
 def test_stitch_year_files(tmp_path):
     y1 = tmp_path / "2023.csv"
     y2 = tmp_path / "2024.csv"
-    y1.write_text("RequestID, AllocatedUser\n1,Amy\n2,Bob\n")
-    y2.write_text("RequestID, AllocatedUser\n3,Tom\4,Anne\n")
+    y1.write_text("RequestID,AllocatedUser\n1,Amy\n2,Bob\n")
+    y2.write_text("RequestID,AllocatedUser\n3,Tom\n4,Anne\n")
 
     df = stitch_year_files([str(y1), str(y2)], batch_load="30-08-2025")
 
@@ -18,8 +18,8 @@ def test_stitch_year_files(tmp_path):
 def test_stitch_year_files_mismatch_cols(tmp_path):
     y1 = tmp_path / "a.csv"
     y2 = tmp_path / "b.csv"
-    y1.write_text("RequestID, AllocatedUser\n1, Amy\n")
-    y2.write_text("ID,Item\2,Laptop\n")
+    y1.write_text("RequestID,AllocatedUser\n1,Amy\n")
+    y2.write_text("ID,Item\n2,Laptop\n")
 
     df = stitch_year_files([str(y1), str(y2)], batch_load="30-08-2025")
 
@@ -31,7 +31,7 @@ def test_stitch_year_files_mismatch_cols(tmp_path):
 def test_stitch_year_files_skip_invalid_file(tmp_path):
     ok = tmp_path / "good.csv"
     not_ok = tmp_path / "bad.csv" # missing file removed
-    ok.write_text("RequestID, AllocatedUser\n1, Amy\n")
+    ok.write_text("RequestID,AllocatedUser\n1,Amy\n")
 
     df = stitch_year_files([str(ok), str(not_ok)], batch_load="30-08-2025")
 

@@ -4,8 +4,8 @@ import pandas as pd
 def test_stitch_year_files(tmp_path):
     y1 = tmp_path / "2023.csv"
     y2 = tmp_path / "2024.csv"
-    y1.write_text("RequestID, AllocatedUser\1, Amy\2, Bob\n")
-    y2.write_text("RequestID, AllocatedUser\3, Tom\4, Anne\n")
+    y1.write_text("RequestID, AllocatedUser\n1,Amy\n2,Bob\n")
+    y2.write_text("RequestID, AllocatedUser\n3,Tom\4,Anne\n")
 
     df = stitch_year_files([str(y1), str(y2)], batch_load="30-08-2025")
 
@@ -18,7 +18,7 @@ def test_stitch_year_files(tmp_path):
 def test_stitch_year_files_mismatch_cols(tmp_path):
     y1 = tmp_path / "a.csv"
     y2 = tmp_path / "b.csv"
-    y1.write_text("RequestID, AllocatedUser\1, Amy\n")
+    y1.write_text("RequestID, AllocatedUser\n1, Amy\n")
     y2.write_text("ID,Item\2,Laptop\n")
 
     df = stitch_year_files([str(y1), str(y2)], batch_load="30-08-2025")

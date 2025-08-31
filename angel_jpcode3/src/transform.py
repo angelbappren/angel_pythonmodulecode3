@@ -1,7 +1,7 @@
 import pandas as pd
 import logging
 
-def stitch_year_files(file_list, load_batch):
+def stitch_year_files(file_list, batch_load):
 
     year_files = []
 

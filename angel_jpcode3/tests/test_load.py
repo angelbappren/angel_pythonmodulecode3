@@ -19,16 +19,30 @@ def test_load_for_csv_successful(tmp_path):
     assert saved.iloc[0]["AllocatedUser"] == "Amy"
 
 
-    def test_load_for_csv_empty_df(tmp_path):
-        df = pd.DataFrame(columns=["A", "B"])
-        output_file = tmp_path / "empty" "empty.csv"
-        result = load_for_csv(df, output_file)
+def test_load_for_csv_empty_df(tmp_path):
+    df = pd.DataFrame(columns=["A", "B"])
+    output_file = tmp_path / "empty" "empty.csv"
+    result = load_for_csv(df, output_file)
 
-        assert result == str(output_file)
-        assert output_file.exists()
+    assert result == str(output_file)
+    assert output_file.exists()
 
-        saved = pd.read_csv(output_file)
-        assert list(saved.columns) == ["A", "B"]
-        assert len(saved) == 0
+    saved = pd.read_csv(output_file)
+    assert list(saved.columns) == ["A", "B"]
+    assert len(saved) == 0
+
+#def test_load_for_csv_notworking_path():
+#   df = pd.DataFrame({"A": [1], "B": [2]})
+#   notworking_path = "C:/this/path/drive/is/notworking/invalid_path.csv"
+
+#    result = load_for_csv(df, notworking_path)
+#   assert result == ""
 
 
+def test_load_for_csv_notworking_path():
+    df = pd.DataFrame({"A": [1], "B": [2]})
+    bad_path = "Z:/nonexistent_drive/invalid_path.csv"
+
+    result = load_for_csv(df, bad_path)
+
+    assert result == ""

@@ -4,14 +4,24 @@ import logging
 def stitch_year_files(file_list, batch_load):
 
     year_files = []
+    expected_columns = None
 
     for path in file_list:
         try:
             df = pd.read_csv(path)
             logging.info(f"Loaded CSV '{path}' with {len(df)} rows.")
+
+            if expected_columns is None:
+                expected_columns = set(df.columns)
+            elif set(df.columns) != expected_columns:
+                logging.warning(f"Column mismatch in '{path}'. Expected: {expected_columns}, Found: {set(df.columns)}")
+
             year_files.append(df)
+
         except Exception as fail_error:
             logging.error(f"Failed to load CSV '{path}': {str(fail_error)}")
+
+
 
     if not year_files:
         logging.warning("No CSV files successfully loaded; returning empty df.")

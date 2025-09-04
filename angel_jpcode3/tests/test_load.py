@@ -17,6 +17,7 @@ def test_load_for_csv_successful(tmp_path):
     assert list(saved.columns) == ["RequestID", "AllocatedUser"]
     assert len(saved) == 2
     assert saved.iloc[0]["AllocatedUser"] == "Amy"
+    assert saved.iloc[1]["AllocatedUser"] == "John"
 
 
 def test_load_for_csv_empty_df(tmp_path):

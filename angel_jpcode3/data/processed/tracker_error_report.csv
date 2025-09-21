@@ -1,0 +1,19 @@
+error_type,source_system,data_period,date_checked,field_name,error_count
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Request Date,6
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,ALEMBA,215
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Budget Code,52
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Site,75
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Service User,1
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Type,25
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Catalogue Item,3
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Cost Per Unit,34
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,QTY,6
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Status,3
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Total Cost,18
+Missing Field,TRACKER,23-24 to 24-25,2025-09-21,Requisition Number,1355
+Invalid Format,TRACKER,23-24 to 24-25,2025-09-21,Request Date,2
+Invalid Format,TRACKER,23-24 to 24-25,2025-09-21,ALEMBA,193
+Out of Range Values,TRACKER,23-24 to 24-25,2025-09-21,FY,307
+Out of Range Values,TRACKER,23-24 to 24-25,2025-09-21,Site,461
+Cost Value Mismatch,TRACKER,23-24 to 24-25,2025-09-21,Total Cost,13
+Unexpected Requisition Number,TRACKER,23-24 to 24-25,2025-09-21,Requisition Number,443

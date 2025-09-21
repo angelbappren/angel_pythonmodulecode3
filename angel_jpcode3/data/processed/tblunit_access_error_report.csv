@@ -1,0 +1,18 @@
+error_type,source_system,system_table,data_period,date_checked,field_name,error_count
+Missing Field,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,RequestID,184
+Missing Field,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,Status,1
+Missing Field,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,SerialNumber,25465
+Missing Field,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,DateRecieved,37421
+Missing Field,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,AssetNumber,31411
+Missing Field,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,AllocatedUser,34811
+Missing Field,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,IMEI_2,180
+Missing Field,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,IMEI_1,36396
+Missing Field,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,MobilePhone,36306
+Invalid Format,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,DateRecieved,37421
+Invalid Format,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,IMEI_2,180
+Invalid Format,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,IMEI_1,106
+Out of Range Values,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,Request Status,118
+Out of Range Dates,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,DateCreated,8
+Duplicate Serial Number,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,SerialNumber,608
+Duplicate Asset Number,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,AssetNumber,17
+Unexpected Product ID,ACCESS,tblUnit,23-24 to 24-25,2025-09-21,ProductID,1

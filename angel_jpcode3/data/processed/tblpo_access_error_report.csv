@@ -1,0 +1,9 @@
+error_type,source_system,system_table,data_period,date_checked,field_name,error_count
+Missing Field,ACCESS,tblPO,23-24 to 24-25,2025-09-21,PONumber,31
+Missing Field,ACCESS,tblPO,23-24 to 24-25,2025-09-21,RaisedBy,39
+Missing Field,ACCESS,tblPO,23-24 to 24-25,2025-09-21,Site,516
+Missing Field,ACCESS,tblPO,23-24 to 24-25,2025-09-21,Notes,764
+Missing Field,ACCESS,tblPO,23-24 to 24-25,2025-09-21,Alemba,477
+Out of Range Values,ACCESS,tblPO,23-24 to 24-25,2025-09-21,Site,85
+Duplicate PO Number,ACCESS,tblPO,23-24 to 24-25,2025-09-21,PONumber,189
+Unexpected PO Number,ACCESS,tblPO,23-24 to 24-25,2025-09-21,PONumber,349
